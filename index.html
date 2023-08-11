@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dummy Form</title>
+    <link href="./style.css" rel="stylesheet">
+    <link href="https://fonts.cdnfonts.com/css/chiro-miro" rel="stylesheet">
+                
+                
+</head>
+<body>
+    <div class="container">
+        <div class="leftside">
+            <div class="banner">
+                <img src="./images/icon.png" alt="Cute anime quokka eating a cookie" class="icon">
+                <div class="bannertext">JYNX</div>
+            </div>
+        </div>
+    
+        <div class="rightside">
+            <div class="maintext content">
+                <p>This is <strong>not</strong> a real online service! We are not responsible for any stupid things you do because you believe it is. You have been warned</p>
+                <p class="linetwo">Sign up now to get started.</p>
+                <p class="linethree">You <em>know</em> you want to</p>
+            </div>
+        
+            <div class="form content">
+                <div class="title"> Let's do this!</div>
+                <form action="" method="get" id="aform">
+                    <ul class="input">
+                        <li><label for="firstname">First Name:</label><span>*</span>
+                            <p><input type="text" id="firstname" required></p></li>
+                        <li><label for="lastname">Last Name:</label>
+                            <p><input type="text" id="lastname"></p></li>
+                        <li><label for="email">Email:</label><span>*</span>
+                            <p><input type="email" id="email" required></p></li>
+                        <li><label for="phonenumber">Phone Number:</label>
+                            <p><input type="tel" id="phonenumber"></p></li>
+                        <li><label for="password1">Password:</label><span>*</span>
+                            <p><input type="password" id="password1" required></p></li>
+                        <li><label for="password2">Confirm Password:</label><span>*</span>
+                            <p><input type="password" id="password2" required></p></li>
+                    </ul>
+                    <div id="errormsg"></div>
+                </form>
+            </div>
+
+            <div class="bottomtext content">
+                <button type="submit" form="aform" class="btn">Create Account</button>
+                <div class="alreadytext"> Already have an account? <a href="" class="loginlink">Log in</a> </div>
+            </div>
+        </div>
+    </div>
+    <script src='./script.js' ></script>
+</body>
+</html>

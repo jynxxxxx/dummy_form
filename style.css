@@ -1,0 +1,143 @@
+*{
+    margin:0;
+    color: #3b2016 ;
+    overflow: hidden;
+}
+
+:root{
+    --mainfontsize: 22px;
+    --bgcolor: #ece6d7;
+}
+
+.container{
+    display: grid;
+    grid-template-columns:40% 60%;
+    height: 100vh;
+    font-size: var(--mainfontsize);
+    background-color: var(--bgcolor);
+    position: relative;
+}
+
+#errormsg{
+    color: red;
+    font-size: 12px;
+}
+
+.rightside{
+    font-family: Arial, sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 5%;
+    justify-content: center;
+}
+
+.content{    
+    padding-left: 10%;
+    padding-right: 10%;
+    justify-self: center;
+}
+
+.linethree{
+    margin-top: 5%;
+}
+
+.form{
+    margin-top: 5%;
+    padding-top: 5%;
+    padding-bottom: 5%;
+    box-shadow: 0px 10px 20px  #dbd6ca, 0px -10px 20px #dbd6ca;
+}
+
+.input{
+    appearance: none;
+    list-style-type: none; 
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;   
+    font-size: 18px; 
+    margin-top: 5%;
+    gap: 6px;
+    list-style-position: inside;
+    padding-left: 0;
+}
+
+.bottomtext{
+    justify-self: end;
+    margin-bottom: auto;
+    margin-top: auto;
+    font-size: 16px;
+}
+
+.loginlink{
+    color: #d54610;
+}
+
+.btn{
+    margin-bottom: 10%;
+    padding: 4px 24px;
+    font-size: var(--mainfontsize);
+    font-weight: 600;
+    border: #6a3121  solid 4px;
+    border-radius: 6px;
+    color: #6a3121;
+}
+
+input{
+    width: 90%;
+    height: var(--mainfontsize);
+    font-size: 18px;
+    justify-items: start;
+}
+
+input:focus {
+    outline: none;
+    border: #e69522 2px solid ;
+    border-radius: 4px;
+}
+
+.maintext{
+    line-height: 1.5;
+    padding-top: 10%;
+}
+
+.leftside{
+    background-image: url("./images/cafe.jpg");
+    grid-column: 1/ span 1;
+    grid-row: 1/span 4;
+    background-color: var(--bgcolor);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover; 
+    position: relative;
+}
+
+.icon{
+    height: 1.5em;
+    width: auto;
+}
+
+
+.banner{
+    position: absolute;
+    top: 25%;
+    height: 6rem;
+    background-color: rgba(236, 230, 215, 0.5);
+    width: 100%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    font-family: 'Chiro Miro', sans-serif;
+    font-weight: bolder;
+}
+
+.btn:hover{
+    border: #6a3121  solid 4px;
+    border-radius: 6px;
+    background-color: #6a3121; 
+    color: white;
+}
+
+
